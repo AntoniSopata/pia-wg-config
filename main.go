@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/kylegrantlucas/pia-wg-config/pia"
+	"github.com/AntoniSopata/pia-wg-config/pia"
 	cli "github.com/urfave/cli/v2"
 )
 
@@ -23,13 +23,13 @@ func main() {
 			&cli.StringFlag{
 				Name:    "region",
 				Aliases: []string{"r"},
-				Value:   "us_california",
+				Value:   "nl_amsterdam",
 				Usage:   "The private internet access region to connect to",
 			},
 			&cli.BoolFlag{
 				Name:    "verbose",
 				Aliases: []string{"v"},
-				Value:   false,
+				Value:   true,
 				Usage:   "Print verbose output",
 			},
 		},
